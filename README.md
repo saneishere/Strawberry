@@ -1,1 +1,2 @@
-# Strawberry
+# Strawberry 🍓
+## What is Strawberry?

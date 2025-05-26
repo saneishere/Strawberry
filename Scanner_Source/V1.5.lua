@@ -71,6 +71,8 @@ end
 
 repeat task.wait(1) until backdoored 
 
+notification("Thanks MastersMZ", "discord server coming soon :3", 5)
+
 ---gui
 
 local G2L = {};

@@ -1556,46 +1556,6 @@ local script = G2L["5c"];
 			curplayers = {}
 		end
 	end)
-	
-	--[[
-	local curplayers = {}
-	local slocked = false
-	local Players = game:GetService("Players")
-	
-	-- Connections created once
-	Players.PlayerAdded:Connect(function(plr)
-		if slocked then
-			for _, name in ipairs(curplayers) do
-				if plr.Name == name then
-					delete(plr)
-				end
-			end
-		end
-	end)
-	
-	Players.PlayerRemoving:Connect(function(plr)
-		if slocked then
-			for i, name in ipairs(curplayers) do
-				if name == plr.Name then
-					table.remove(curplayers, i)
-					break
-				end
-			end
-		end
-	end)
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		slocked = not slocked
-		if slocked then
-			curplayers = {}
-			for _, p in ipairs(Players:GetPlayers()) do
-				table.insert(curplayers, p.Name)
-			end
-		else
-			curplayers = {}
-		end
-	end)
-	]]--
 end;
 task.spawn(C_5c);
 -- StarterGui.Strawberry.MainFrame.Drag

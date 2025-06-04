@@ -80,7 +80,7 @@ end
 
 repeat task.wait(1) until backdoored 
 
-notification("Thanks MastersMZ", "discord server coming soon :3", 5)
+notification("Thanks MastersMZ!", ".gg/v962U2JJHw :3", 5)
 
 local G2L = {};
 

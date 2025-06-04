@@ -103,6 +103,8 @@ end
 
 repeat task.wait(1.5) until backdoored 
 
+notification("Thanks MastersMZ!", ".gg/v962U2JJHw :3", 5)
+
 --gui
 local G2L = {};
 

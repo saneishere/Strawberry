@@ -15,4 +15,4 @@
 made by C:\Drive, OwO⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ]]--
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/Scanner_Source/V2.25.luau"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/Scanner_Source/V3.00.lua"))()

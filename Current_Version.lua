@@ -12,7 +12,14 @@
 ⠸⣎⠋⢠⢢⠀⢠⢀⠀⠀⣠⠴⠋⠀⠀⠀⠀⠀⠀⠀
 ⠀⠘⠷⣬⣅⣀⣬⡷⠖⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠈⠁⠀
-made by C:\Drive, OwO⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+made by C:\Drive and Saji⠀⠀⠀
+
+C:\Drive - Gui, commands
+Saji - Commands, scanner
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ]]--
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/Scanner_Source/V3.00.lua"))()
+--=======================================================================================================================--
+loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/Scanner_Source/V4.00.lua"))()
+--=======================================================================================================================--

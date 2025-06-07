@@ -106,7 +106,7 @@ repeat task.wait(1.5) until backdoored == true; -- // creates the gui once the g
 local G2L = {};
 
 -- StarterGui.Strawberry
-G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
+G2L["1"] = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui);
 G2L["1"]["DisplayOrder"] = 1000000000;
 G2L["1"]["Name"] = [[Strawberry]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;

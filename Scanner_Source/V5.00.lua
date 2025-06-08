@@ -91,7 +91,7 @@ end;
 local function scan(root)
 	if backdoored == true then return end;
 	for i, v in pairs(root:GetDescendants()) do
-		if v:IsA("RemoteEvent") and v.Parent.Name == "DefaultChatSystemChatEvents" and v.Parent.Name == "RobloxReplicatedStorage" then
+		if v:IsA("RemoteEvent") then
 			if isbackdoored(v) == true then
 				backdoored = true;
 				event = v;

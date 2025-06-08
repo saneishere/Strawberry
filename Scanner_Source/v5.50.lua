@@ -34,35 +34,9 @@ local timer = 0; -- // times how long it takes to load the script
 local backdoorfound = false; -- // this will turn to true or false depending on if vuln found
 local vulnremote = nil; -- // if a remote with a vuln or backdoor is found it will be referenced in this variable
 
-local safetime = 0.3; -- // lower will cause faster scan times but it will mess up more and have false positives
--- // higher numbers (like 0.3 which is the default) will take longer but be a good scanner
--- // 0.3 is the best for all situations and prob wont need to be changed
-
-local notifclicked = false;
-
-function Callback(answer)
-	if answer == "Safe" then
-		safetime = 0.3;
-		notifclicked = true;
-	elseif answer == "Fast" then
-		safetime = 0.1;
-		notifclicked = true;
-	end;
-end;
-
-local Bindable = Instance.new("BindableFunction");
-Bindable.OnInvoke = Callback;
-
-game.StarterGui:SetCore("SendNotification", {
-	Title = "STRAWBERRY V5";
-	Text = "Would you like to use safe or fast mode? (fast mode is faster but more blatant and more buggy, safe mode recommended)";
-	Duration = 9e9;
-	Button1 = "Safe";
-	Button2 = "Fast";
-	Callback = Bindable;
-});
-
-repeat task.wait(0.5) until notifclicked;
+local safetime = 0.2; -- // lower will cause faster scan times but it will mess up more and have false positives
+-- // higher numbers (like 0.2 which is the default) will take longer but be a good scanner
+-- // 0.2 is the best for all situations and prob wont need to be changed
 
 local scanninghint = Instance.new("Hint", workspace); -- // creates a hint to track scanner progress for the skids
 scanninghint.Text = "STRAWBERRY V5: Scanning Game. Be patient. (Check F9 menu for progress) (Game might freeze for a bit)";
@@ -99,6 +73,7 @@ end; -- // checks a remote event for a backdoor or vulnerability by firing it an
 local function scan()
 	for i, v in pairs(game:GetDescendants()) do
 		if v:IsA("RemoteEvent") then
+			if v.Parent.Name == "RobloxReplicatedStorage" then continue end;
 			if remoteBackdoored(v) then
 				print("found1!!?!?!");
 				backdoorfound = true;
@@ -119,10 +94,10 @@ if backdoorfound then
 	-- // loads up the gui after backdoor/vuln is found :3
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/UI_Source/v.5.50.lua"))();
 	scanninghint.Text = "STRAWBERRY V5: Backdoor found in "..tostring(timer).." seconds! (Backdoored Remote name: "..vulnremote.Name..")";
-	task.wait(7.5);
+	task.wait(10);
 	scanninghint:Destroy();
 else
 	scanninghint.Text = "STRAWBERRY V5: No backdoor found srry!";
-	task.wait(7.5);
+	task.wait(10);
 	scanninghint:Destroy();
 end;

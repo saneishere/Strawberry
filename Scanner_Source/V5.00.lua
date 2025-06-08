@@ -70,12 +70,10 @@ local function isbackdoored(remote)
 		print("Strawberry: did not find startergear, using random workspace part! (this method may provide a false positive)");
 		part = workspace:FindFirstChildOfClass("BasePart");
 	else
-		print("Strawberry: testing delete on startergear")
+		print("Strawberry: testing delete on startergear");
 		part = game.Players.LocalPlayer.StarterGear;
 	end;
-	task.wait()
-	if part == nil then print("Strawberry: this remotes scan is corrupted, skipping remote.") return false end;
-	-- // code above stops the scan if the part is still nil (which would provide a false posititve)
+	task.wait();
 	local origParent = part.Parent;
 	task.wait();
 	deletetest(part);
@@ -115,7 +113,7 @@ if not event then
 	notif("No backdoor found, sorry :(",5);
 end; -- // tells user if the game dev was too smart for a backdoor
 
-repeat task.wait() until backdoored == true; -- // creates the gui once the game is confirmed to be backdoored
+repeat task.wait(0.1) until backdoored == true; -- // creates the gui once the game is confirmed to be backdoored
 
 -- // boots up the backdoor gui after the backdoor is found :3
 loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/UI_Source/v5.00.lua"))();

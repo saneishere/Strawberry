@@ -21,5 +21,5 @@ Saji - Commands, scanner
 ]]--
 
 --=======================================================================================================================--
-loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/Scanner_Source/V4.00.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/Scanner_Source/V5.00.lua"))()
 --=======================================================================================================================--

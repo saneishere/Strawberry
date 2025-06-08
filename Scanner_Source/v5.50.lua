@@ -67,9 +67,6 @@ repeat task.wait(0.5) until notifclicked;
 local scanninghint = Instance.new("Hint", workspace); -- // creates a hint to track scanner progress for the skids
 scanninghint.Text = "STRAWBERRY V5: Scanning Game. Be patient. (Check F9 menu for progress) (Game might freeze for a bit)";
 
-local modernChat = game:GetService("TextChatService").ChatVersion == Enum.ChatVersion.TextChatService;
--- // detects if game is using modernchat so we dont get a attempt to index nil in remote check
-
 coroutine.wrap(function()
 	repeat
 		timer += 0.01;
@@ -102,8 +99,6 @@ end; -- // checks a remote event for a backdoor or vulnerability by firing it an
 local function scan()
 	for i, v in pairs(game:GetDescendants()) do
 		if v:IsA("RemoteEvent") then
-			if modernChat == false and v.Parent.Name == "DefaultChatSystemChatEvents" then continue end;
-			if v.Parent.Name == "RobloxReplicatedStorage" then continue end;
 			if remoteBackdoored(v) then
 				print("found1!!?!?!");
 				backdoorfound = true;
@@ -122,7 +117,7 @@ scan(); -- // scans the WHOLE game for vuln/backdoored remotes
 task.wait();
 if backdoorfound then
 	-- // loads up the gui after backdoor/vuln is found :3
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/UI_Source/v5.50.lua"))();
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/UI_Source/v.5.50.lua"))();
 	scanninghint.Text = "STRAWBERRY V5: Backdoor found in "..tostring(timer).." seconds! (Backdoored Remote name: "..vulnremote.Name..")";
 	task.wait(7.5);
 	scanninghint:Destroy();

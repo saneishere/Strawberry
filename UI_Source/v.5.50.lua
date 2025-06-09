@@ -165,7 +165,6 @@ G2L["12"] = Instance.new("ScrollingFrame", G2L["2"]);
 G2L["12"]["Active"] = true;
 G2L["12"]["BorderSizePixel"] = 0;
 G2L["12"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["12"]["CanvasPosition"] = Vector2.new(0, 420);
 G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["12"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["12"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
@@ -1563,9 +1562,9 @@ G2L["a9"] = Instance.new("LocalScript", G2L["2"]);
 G2L["a9"]["Name"] = [[UIDrag]];
 
 
--- StarterGui.Strawberry.MainFrame.LocalScript
+-- StarterGui.Strawberry.MainFrame.MainHandler
 G2L["aa"] = Instance.new("LocalScript", G2L["2"]);
-
+G2L["aa"]["Name"] = [[MainHandler]];
 
 
 -- StarterGui.Strawberry.MainFrame.Username.Anim
@@ -1584,10 +1583,6 @@ task.spawn(C_c);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Bald.LocalScript
 local function C_19()
 local script = G2L["19"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-	
 	local Players = game:GetService("Players")
 	local localPlayer = Players.LocalPlayer
 	
@@ -1638,10 +1633,6 @@ task.spawn(C_19);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ban.LocalScript
 local function C_1e()
 local script = G2L["1e"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-	
 	local bannedplayers = {}
 	
 	game.Players.PlayerAdded:Connect(function(plr)
@@ -1688,10 +1679,6 @@ task.spawn(C_1e);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Blockhead.LocalScript
 local function C_23()
 local script = G2L["23"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
@@ -1726,10 +1713,6 @@ task.spawn(C_23);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Games Scripts.LocalScript
 local function C_28()
 local script = G2L["28"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		for i, v in pairs(game:GetDescendants()) do
 			if v:IsA("Script") then
@@ -1751,10 +1734,6 @@ task.spawn(C_28);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Terrain.LocalScript
 local function C_2d()
 local script = G2L["2d"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		delete(workspace.Terrain)
 	end)
@@ -1763,10 +1742,6 @@ task.spawn(C_2d);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn.LocalScript
 local function C_32()
 local script = G2L["32"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		for i, v in ipairs(workspace:GetDescendants()) do
 			if v:IsA("SpawnLocation") then
@@ -1779,10 +1754,6 @@ task.spawn(C_32);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Brickify.LocalScript
 local function C_37()
 local script = G2L["37"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
@@ -1816,10 +1787,6 @@ task.spawn(C_37);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Cancel Animations.ex
 local function C_3c()
 local script = G2L["3c"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
@@ -1853,10 +1820,6 @@ task.spawn(C_3c);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Click on player to copy user.LocalScript
 local function C_41()
 local script = G2L["41"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		local Players = game:GetService("Players")
 		local player = Players.LocalPlayer
@@ -1895,10 +1858,6 @@ task.spawn(C_41);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Delete Tool.LocalScript
 local function C_46()
 local script = G2L["46"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		local Players = game:GetService("Players")
 		local player = Players.LocalPlayer
@@ -1933,10 +1892,6 @@ task.spawn(C_46);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Explorer.ex
 local function C_4b()
 local script = G2L["4b"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		local G2L = {};
 	
@@ -2540,7 +2495,7 @@ local script = G2L["4b"];
 	
 			local function listChildren(parentInstance)
 				clearButtons()
-
+	
 				for _, child in ipairs(parentInstance:GetChildren()) do
 					local button = Instance.new("TextButton")
 					button.Name = child.Name
@@ -2625,10 +2580,6 @@ task.spawn(C_4b);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Flight.LocalScript
 local function C_50()
 	local script = G2L["50"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	flying = false
 	Fly = false
 
@@ -2728,10 +2679,6 @@ task.spawn(C_50);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Goto.LocalScript
 local function C_55()
 	local script = G2L["55"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
@@ -2746,10 +2693,6 @@ task.spawn(C_55);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kick.LocalScript
 local function C_5a()
 	local script = G2L["5a"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
@@ -2783,10 +2726,6 @@ task.spawn(C_5a);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kill.ex
 local function C_5f()
 	local script = G2L["5f"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
@@ -2820,10 +2759,6 @@ task.spawn(C_5f);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Korblox.LocalScript
 local function C_64()
 	local script = G2L["64"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local localPlayer = game.Players.LocalPlayer
@@ -2921,10 +2856,6 @@ task.spawn(C_64);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Naked.LocalScript
 local function C_69()
 	local script = G2L["69"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	local Players = game:GetService("Players")
 	local localPlayer = Players.LocalPlayer
 
@@ -2975,10 +2906,6 @@ task.spawn(C_69);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.No-limbs.LocalScript
 local function C_6e()
 	local script = G2L["6e"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	--this was my pain and suffering :')
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3091,10 +3018,6 @@ task.spawn(C_6e);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Nuke Game.LocalScript
 local function C_73()
 	local script = G2L["73"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	script.Parent.MouseButton1Click:Connect(function()
 		for _, v in ipairs(workspace:GetDescendants()) do
 			if v:IsA("BasePart") then
@@ -3112,10 +3035,6 @@ task.spawn(C_73);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Punish.LocalScript
 local function C_78()
 	local script = G2L["78"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
@@ -3149,10 +3068,6 @@ task.spawn(C_78);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ragdoll.LocalScript
 local function C_7d()
 	local script = G2L["7d"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
@@ -3186,10 +3101,6 @@ task.spawn(C_7d);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Faces.LocalScript
 local function C_82()
 	local script = G2L["82"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	local Players = game:GetService("Players")
 	local localPlayer = Players.LocalPlayer
 
@@ -3240,10 +3151,6 @@ task.spawn(C_82);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Tools.ex
 local function C_87()
 	local script = G2L["87"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
@@ -3305,10 +3212,6 @@ task.spawn(C_87);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove all sounds.LocalScript
 local function C_8c()
 	local script = G2L["8c"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	script.Parent.MouseButton1Click:Connect(function()
 		for _, v in ipairs(workspace:GetDescendants()) do
 			if v:IsA("Sound") then
@@ -3321,18 +3224,15 @@ task.spawn(C_8c);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove lighting.LocalScript
 local function C_91()
 	local script = G2L["91"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	script.Parent.MouseButton1Click:Connect(function()
+		for i, v in ipairs(game.Lighting:GetDescendants()) do
+			delete(v)
+		end
+		task.wait()
 		for _, v in ipairs(workspace:GetDescendants()) do
 			if v:IsA("Light") then
 				delete(v)
 			end
-		end
-		for i, v in ipairs(game.Lighting:GetDescendants()) do
-			delete(v)
 		end
 	end)
 end;
@@ -3340,10 +3240,6 @@ task.spawn(C_91);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove players gui.LocalScript
 local function C_96()
 	local script = G2L["96"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	local Players = game:GetService("Players")
 	local localPlayer = Players.LocalPlayer
 
@@ -3359,25 +3255,19 @@ local function C_96()
 			end
 		elseif name == "all" then
 			for _, v in pairs(Players:GetPlayers()) do
-				if v.Character and v.Character:FindFirstChild("Head") then
-					for _, x in pairs(v.PlayerGui:GetChildren()) do
-						delete(x)
-					end
+				for _, x in pairs(v.PlayerGui:GetChildren()) do
+					delete(x)
 				end
 			end
 		elseif name == "others" then
 			for _, v in pairs(Players:GetPlayers()) do
-				if v ~= localPlayer and v.Character and v.Character:FindFirstChild("Head") then
-					for _, x in pairs(v.PlayerGui:GetChildren()) do
-						delete(x)
-					end
+				for _, x in pairs(v.PlayerGui:GetChildren()) do
+					delete(x)
 				end
 			end
 		elseif name == "me" then
-			if localPlayer.Character and localPlayer.Character:FindFirstChild("Head") then
-				for _, v in pairs(localPlayer.PlayerGui:GetChildren()) do
-					delete(v)
-				end
+			for _, v in pairs(localPlayer.PlayerGui:GetChildren()) do
+				delete(v)
 			end
 		end
 	end)
@@ -3386,10 +3276,6 @@ task.spawn(C_96);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.SLock.LocalScript
 local function C_9b()
 	local script = G2L["9b"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	local function notif(msg,dur)
 		game.StarterGui:SetCore("SendNotification",{
 			Title = "Strawberry";
@@ -3436,10 +3322,6 @@ task.spawn(C_9b);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Waist.LocalScript
 local function C_a0()
 	local script = G2L["a0"];
-	local function delete(item)
-		game.Players.LocalPlayer.deletebind:Fire(item)
-	end
-
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
@@ -3575,9 +3457,13 @@ local function C_a9()
 
 end;
 task.spawn(C_a9);
--- StarterGui.Strawberry.MainFrame.LocalScript
+-- StarterGui.Strawberry.MainFrame.MainHandler
 local function C_aa()
 	local script = G2L["aa"];
+	local function delete(item)
+		game.Players.LocalPlayer.deletebind:Fire(item)
+	end
+
 	local commandcount = 0
 	for i, v in pairs(script.Parent.ScrollingFrame:GetChildren()) do
 		if v:IsA("TextButton") then

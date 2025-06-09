@@ -1,6 +1,10 @@
 -- Instances: 170 | Scripts: 33 | Modules: 0 | Tags: 0
 local G2L = {};
 
+	local function delete(item)
+		game.Players.LocalPlayer.deletebind:Fire(item)
+	end
+
 -- StarterGui.Strawberry
 G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 G2L["1"]["DisplayOrder"] = 1000000000;

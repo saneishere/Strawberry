@@ -58,7 +58,9 @@ end); -- // creates a delete event with the backdoored remote so the gui can use
 
 local function remoteBackdoored(remote)
 	local function testfire(item)
-		remote:FireServer(item);
+		pcall(function()
+			remote:FireServer(item);			
+		end);
 	end;
 	local function isDestroyed(obj)
 		return obj == nil or obj.Parent == nil;
@@ -67,19 +69,21 @@ local function remoteBackdoored(remote)
 	testfire(testpart);
 	task.wait(safetime); -- // slight delay to see if remote reacts
 	print("STRAWBERRY V5: "..remote.Name.." /isbackdoored: "..tostring(isDestroyed(testpart)).." / "..remote:GetFullName());
+	if isDestroyed(testpart) then
+		vulnremote = remote;
+	end
 	return isDestroyed(testpart);
 end; -- // checks a remote event for a backdoor or vulnerability by firing it and seeing if it does something
 
 local function scan()
 	for i, v in pairs(game:GetDescendants()) do
 		if v:IsA("RemoteEvent") then
+			if not v.Parent then continue end
 			if v.Parent.Name == "RobloxReplicatedStorage" then continue end;
 			if remoteBackdoored(v) then
-				print("found1!!?!?!");
 				backdoorfound = true;
-				vulnremote = v;
-				task.wait();
-				break; -- // backdoor found so breaks the loop
+				print("found1!!?!?!");
+				return; -- // backdoor found so breaks the loop
 			else
 				-- // keeps scanning if a backdoor isent found
 			end; -- // tests remote for backdoor

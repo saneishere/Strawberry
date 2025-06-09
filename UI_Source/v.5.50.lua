@@ -1,4 +1,4 @@
--- Instances: 134 | Scripts: 25 | Modules: 0 | Tags: 0
+-- Instances: 170 | Scripts: 33 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.Strawberry
@@ -91,14 +91,13 @@ G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a"]["BackgroundTransparency"] = 1;
 G2L["a"]["Size"] = UDim2.new(0, 165, 0, 33);
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Text"] = [[🍓Strawberry v5.5.0]];
+G2L["a"]["Text"] = [[🍓Strawberry v5.5.0 (FE)]];
 G2L["a"]["Name"] = [[Title]];
 G2L["a"]["Position"] = UDim2.new(0.22333, 0, 0.02, 0);
 
 
 -- StarterGui.Strawberry.MainFrame.Username
 G2L["b"] = Instance.new("TextBox", G2L["2"]);
-G2L["b"]["CursorPosition"] = -1;
 G2L["b"]["Name"] = [[Username]];
 G2L["b"]["BorderSizePixel"] = 0;
 G2L["b"]["TextSize"] = 18;
@@ -166,6 +165,7 @@ G2L["12"] = Instance.new("ScrollingFrame", G2L["2"]);
 G2L["12"]["Active"] = true;
 G2L["12"]["BorderSizePixel"] = 0;
 G2L["12"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["12"]["CanvasPosition"] = Vector2.new(0, 420);
 G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["12"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["12"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
@@ -339,7 +339,7 @@ G2L["23"] = Instance.new("LocalScript", G2L["1f"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Games Scripts
 G2L["24"] = Instance.new("TextButton", G2L["12"]);
 G2L["24"]["BorderSizePixel"] = 0;
 G2L["24"]["TextSize"] = 18;
@@ -349,16 +349,16 @@ G2L["24"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["24"]["BackgroundTransparency"] = 0.8;
 G2L["24"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["Text"] = [[Break Spawnlocations]];
-G2L["24"]["Name"] = [[BreakSpawn]];
+G2L["24"]["Text"] = [[Break Games Scripts]];
+G2L["24"]["Name"] = [[Break Games Scripts]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Games Scripts.UICorner
 G2L["25"] = Instance.new("UICorner", G2L["24"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Games Scripts.Shadow
 G2L["26"] = Instance.new("ImageLabel", G2L["24"]);
 G2L["26"]["BorderSizePixel"] = 0;
 G2L["26"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -375,17 +375,17 @@ G2L["26"]["Name"] = [[Shadow]];
 G2L["26"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Games Scripts.Shadow.UIGradient
 G2L["27"] = Instance.new("UIGradient", G2L["26"]);
 G2L["27"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Games Scripts.LocalScript
 G2L["28"] = Instance.new("LocalScript", G2L["24"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Brickify
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Terrain
 G2L["29"] = Instance.new("TextButton", G2L["12"]);
 G2L["29"]["BorderSizePixel"] = 0;
 G2L["29"]["TextSize"] = 18;
@@ -395,16 +395,16 @@ G2L["29"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["29"]["BackgroundTransparency"] = 0.8;
 G2L["29"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29"]["Text"] = [[Brickify]];
-G2L["29"]["Name"] = [[Brickify]];
+G2L["29"]["Text"] = [[Break Terrain]];
+G2L["29"]["Name"] = [[Break Terrain]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Brickify.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Terrain.UICorner
 G2L["2a"] = Instance.new("UICorner", G2L["29"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Brickify.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Terrain.Shadow
 G2L["2b"] = Instance.new("ImageLabel", G2L["29"]);
 G2L["2b"]["BorderSizePixel"] = 0;
 G2L["2b"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -421,17 +421,17 @@ G2L["2b"]["Name"] = [[Shadow]];
 G2L["2b"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Brickify.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Terrain.Shadow.UIGradient
 G2L["2c"] = Instance.new("UIGradient", G2L["2b"]);
 G2L["2c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Brickify.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Terrain.LocalScript
 G2L["2d"] = Instance.new("LocalScript", G2L["29"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Cancel Animations
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn
 G2L["2e"] = Instance.new("TextButton", G2L["12"]);
 G2L["2e"]["BorderSizePixel"] = 0;
 G2L["2e"]["TextSize"] = 18;
@@ -441,16 +441,16 @@ G2L["2e"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["2e"]["BackgroundTransparency"] = 0.8;
 G2L["2e"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2e"]["Text"] = [[Cancel Animations]];
-G2L["2e"]["Name"] = [[Cancel Animations]];
+G2L["2e"]["Text"] = [[Break Spawnlocations]];
+G2L["2e"]["Name"] = [[BreakSpawn]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Cancel Animations.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn.UICorner
 G2L["2f"] = Instance.new("UICorner", G2L["2e"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Cancel Animations.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn.Shadow
 G2L["30"] = Instance.new("ImageLabel", G2L["2e"]);
 G2L["30"]["BorderSizePixel"] = 0;
 G2L["30"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -467,17 +467,17 @@ G2L["30"]["Name"] = [[Shadow]];
 G2L["30"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Cancel Animations.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn.Shadow.UIGradient
 G2L["31"] = Instance.new("UIGradient", G2L["30"]);
 G2L["31"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Cancel Animations.ex
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn.LocalScript
 G2L["32"] = Instance.new("LocalScript", G2L["2e"]);
-G2L["32"]["Name"] = [[ex]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Delete Tool
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Brickify
 G2L["33"] = Instance.new("TextButton", G2L["12"]);
 G2L["33"]["BorderSizePixel"] = 0;
 G2L["33"]["TextSize"] = 18;
@@ -487,16 +487,16 @@ G2L["33"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["33"]["BackgroundTransparency"] = 0.8;
 G2L["33"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["Text"] = [[Delete Tool (cant give to others)]];
-G2L["33"]["Name"] = [[Delete Tool]];
+G2L["33"]["Text"] = [[Brickify]];
+G2L["33"]["Name"] = [[Brickify]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Delete Tool.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Brickify.UICorner
 G2L["34"] = Instance.new("UICorner", G2L["33"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Delete Tool.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Brickify.Shadow
 G2L["35"] = Instance.new("ImageLabel", G2L["33"]);
 G2L["35"]["BorderSizePixel"] = 0;
 G2L["35"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -513,17 +513,17 @@ G2L["35"]["Name"] = [[Shadow]];
 G2L["35"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Delete Tool.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Brickify.Shadow.UIGradient
 G2L["36"] = Instance.new("UIGradient", G2L["35"]);
 G2L["36"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Delete Tool.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Brickify.LocalScript
 G2L["37"] = Instance.new("LocalScript", G2L["33"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Explorer
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Cancel Animations
 G2L["38"] = Instance.new("TextButton", G2L["12"]);
 G2L["38"]["BorderSizePixel"] = 0;
 G2L["38"]["TextSize"] = 18;
@@ -533,16 +533,16 @@ G2L["38"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["38"]["BackgroundTransparency"] = 0.8;
 G2L["38"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38"]["Text"] = [[Explorer]];
-G2L["38"]["Name"] = [[Explorer]];
+G2L["38"]["Text"] = [[Cancel Animations]];
+G2L["38"]["Name"] = [[Cancel Animations]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Explorer.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Cancel Animations.UICorner
 G2L["39"] = Instance.new("UICorner", G2L["38"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Explorer.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Cancel Animations.Shadow
 G2L["3a"] = Instance.new("ImageLabel", G2L["38"]);
 G2L["3a"]["BorderSizePixel"] = 0;
 G2L["3a"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -559,17 +559,17 @@ G2L["3a"]["Name"] = [[Shadow]];
 G2L["3a"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Explorer.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Cancel Animations.Shadow.UIGradient
 G2L["3b"] = Instance.new("UIGradient", G2L["3a"]);
 G2L["3b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Explorer.ex
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Cancel Animations.ex
 G2L["3c"] = Instance.new("LocalScript", G2L["38"]);
 G2L["3c"]["Name"] = [[ex]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Flight
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Click on player to copy user
 G2L["3d"] = Instance.new("TextButton", G2L["12"]);
 G2L["3d"]["BorderSizePixel"] = 0;
 G2L["3d"]["TextSize"] = 18;
@@ -579,16 +579,16 @@ G2L["3d"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["3d"]["BackgroundTransparency"] = 0.8;
 G2L["3d"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3d"]["Text"] = [[Flight]];
-G2L["3d"]["Name"] = [[Flight]];
+G2L["3d"]["Text"] = [[Click on player to copy user tool]];
+G2L["3d"]["Name"] = [[Click on player to copy user]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Flight.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Click on player to copy user.UICorner
 G2L["3e"] = Instance.new("UICorner", G2L["3d"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Flight.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Click on player to copy user.Shadow
 G2L["3f"] = Instance.new("ImageLabel", G2L["3d"]);
 G2L["3f"]["BorderSizePixel"] = 0;
 G2L["3f"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -605,17 +605,17 @@ G2L["3f"]["Name"] = [[Shadow]];
 G2L["3f"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Flight.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Click on player to copy user.Shadow.UIGradient
 G2L["40"] = Instance.new("UIGradient", G2L["3f"]);
 G2L["40"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Flight.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Click on player to copy user.LocalScript
 G2L["41"] = Instance.new("LocalScript", G2L["3d"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Goto
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Delete Tool
 G2L["42"] = Instance.new("TextButton", G2L["12"]);
 G2L["42"]["BorderSizePixel"] = 0;
 G2L["42"]["TextSize"] = 18;
@@ -625,16 +625,16 @@ G2L["42"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["42"]["BackgroundTransparency"] = 0.8;
 G2L["42"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["Text"] = [[Goto]];
-G2L["42"]["Name"] = [[Goto]];
+G2L["42"]["Text"] = [[Delete Tool (cant give to others)]];
+G2L["42"]["Name"] = [[Delete Tool]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Goto.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Delete Tool.UICorner
 G2L["43"] = Instance.new("UICorner", G2L["42"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Goto.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Delete Tool.Shadow
 G2L["44"] = Instance.new("ImageLabel", G2L["42"]);
 G2L["44"]["BorderSizePixel"] = 0;
 G2L["44"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -651,17 +651,17 @@ G2L["44"]["Name"] = [[Shadow]];
 G2L["44"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Goto.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Delete Tool.Shadow.UIGradient
 G2L["45"] = Instance.new("UIGradient", G2L["44"]);
 G2L["45"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Goto.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Delete Tool.LocalScript
 G2L["46"] = Instance.new("LocalScript", G2L["42"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kick
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Explorer
 G2L["47"] = Instance.new("TextButton", G2L["12"]);
 G2L["47"]["BorderSizePixel"] = 0;
 G2L["47"]["TextSize"] = 18;
@@ -671,16 +671,16 @@ G2L["47"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["47"]["BackgroundTransparency"] = 0.8;
 G2L["47"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["47"]["Text"] = [[Kick]];
-G2L["47"]["Name"] = [[Kick]];
+G2L["47"]["Text"] = [[Dex Explorer (FE delete feature)]];
+G2L["47"]["Name"] = [[Explorer]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kick.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Explorer.UICorner
 G2L["48"] = Instance.new("UICorner", G2L["47"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kick.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Explorer.Shadow
 G2L["49"] = Instance.new("ImageLabel", G2L["47"]);
 G2L["49"]["BorderSizePixel"] = 0;
 G2L["49"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -697,17 +697,17 @@ G2L["49"]["Name"] = [[Shadow]];
 G2L["49"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kick.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Explorer.Shadow.UIGradient
 G2L["4a"] = Instance.new("UIGradient", G2L["49"]);
 G2L["4a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kick.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Explorer.ex
 G2L["4b"] = Instance.new("LocalScript", G2L["47"]);
+G2L["4b"]["Name"] = [[ex]];
 
 
-
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kill
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Flight
 G2L["4c"] = Instance.new("TextButton", G2L["12"]);
 G2L["4c"]["BorderSizePixel"] = 0;
 G2L["4c"]["TextSize"] = 18;
@@ -717,16 +717,16 @@ G2L["4c"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["4c"]["BackgroundTransparency"] = 0.8;
 G2L["4c"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4c"]["Text"] = [[Kill]];
-G2L["4c"]["Name"] = [[Kill]];
+G2L["4c"]["Text"] = [[Flight (works on you only)]];
+G2L["4c"]["Name"] = [[Flight]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kill.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Flight.UICorner
 G2L["4d"] = Instance.new("UICorner", G2L["4c"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kill.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Flight.Shadow
 G2L["4e"] = Instance.new("ImageLabel", G2L["4c"]);
 G2L["4e"]["BorderSizePixel"] = 0;
 G2L["4e"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -743,17 +743,17 @@ G2L["4e"]["Name"] = [[Shadow]];
 G2L["4e"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kill.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Flight.Shadow.UIGradient
 G2L["4f"] = Instance.new("UIGradient", G2L["4e"]);
 G2L["4f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kill.ex
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Flight.LocalScript
 G2L["50"] = Instance.new("LocalScript", G2L["4c"]);
-G2L["50"]["Name"] = [[ex]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Korblox
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Goto
 G2L["51"] = Instance.new("TextButton", G2L["12"]);
 G2L["51"]["BorderSizePixel"] = 0;
 G2L["51"]["TextSize"] = 18;
@@ -763,16 +763,16 @@ G2L["51"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["51"]["BackgroundTransparency"] = 0.8;
 G2L["51"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["51"]["Text"] = [[Korblox]];
-G2L["51"]["Name"] = [[Korblox]];
+G2L["51"]["Text"] = [[Goto]];
+G2L["51"]["Name"] = [[Goto]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Korblox.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Goto.UICorner
 G2L["52"] = Instance.new("UICorner", G2L["51"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Korblox.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Goto.Shadow
 G2L["53"] = Instance.new("ImageLabel", G2L["51"]);
 G2L["53"]["BorderSizePixel"] = 0;
 G2L["53"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -789,17 +789,17 @@ G2L["53"]["Name"] = [[Shadow]];
 G2L["53"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Korblox.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Goto.Shadow.UIGradient
 G2L["54"] = Instance.new("UIGradient", G2L["53"]);
 G2L["54"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Korblox.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Goto.LocalScript
 G2L["55"] = Instance.new("LocalScript", G2L["51"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Naked
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kick
 G2L["56"] = Instance.new("TextButton", G2L["12"]);
 G2L["56"]["BorderSizePixel"] = 0;
 G2L["56"]["TextSize"] = 18;
@@ -809,16 +809,16 @@ G2L["56"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["56"]["BackgroundTransparency"] = 0.8;
 G2L["56"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["56"]["Text"] = [[Naked]];
-G2L["56"]["Name"] = [[Naked]];
+G2L["56"]["Text"] = [[Kick]];
+G2L["56"]["Name"] = [[Kick]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Naked.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kick.UICorner
 G2L["57"] = Instance.new("UICorner", G2L["56"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Naked.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kick.Shadow
 G2L["58"] = Instance.new("ImageLabel", G2L["56"]);
 G2L["58"]["BorderSizePixel"] = 0;
 G2L["58"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -835,17 +835,17 @@ G2L["58"]["Name"] = [[Shadow]];
 G2L["58"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Naked.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kick.Shadow.UIGradient
 G2L["59"] = Instance.new("UIGradient", G2L["58"]);
 G2L["59"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Naked.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kick.LocalScript
 G2L["5a"] = Instance.new("LocalScript", G2L["56"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.No-limbs
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kill
 G2L["5b"] = Instance.new("TextButton", G2L["12"]);
 G2L["5b"]["BorderSizePixel"] = 0;
 G2L["5b"]["TextSize"] = 18;
@@ -855,16 +855,16 @@ G2L["5b"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["5b"]["BackgroundTransparency"] = 0.8;
 G2L["5b"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5b"]["Text"] = [[No-limbs]];
-G2L["5b"]["Name"] = [[No-limbs]];
+G2L["5b"]["Text"] = [[Kill]];
+G2L["5b"]["Name"] = [[Kill]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.No-limbs.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kill.UICorner
 G2L["5c"] = Instance.new("UICorner", G2L["5b"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.No-limbs.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kill.Shadow
 G2L["5d"] = Instance.new("ImageLabel", G2L["5b"]);
 G2L["5d"]["BorderSizePixel"] = 0;
 G2L["5d"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -881,17 +881,17 @@ G2L["5d"]["Name"] = [[Shadow]];
 G2L["5d"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.No-limbs.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kill.Shadow.UIGradient
 G2L["5e"] = Instance.new("UIGradient", G2L["5d"]);
 G2L["5e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.No-limbs.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kill.ex
 G2L["5f"] = Instance.new("LocalScript", G2L["5b"]);
+G2L["5f"]["Name"] = [[ex]];
 
 
-
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Nuke Game
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Korblox
 G2L["60"] = Instance.new("TextButton", G2L["12"]);
 G2L["60"]["BorderSizePixel"] = 0;
 G2L["60"]["TextSize"] = 18;
@@ -901,16 +901,16 @@ G2L["60"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["60"]["BackgroundTransparency"] = 0.8;
 G2L["60"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["60"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["60"]["Text"] = [[Nuke Game]];
-G2L["60"]["Name"] = [[Nuke Game]];
+G2L["60"]["Text"] = [[Korblox]];
+G2L["60"]["Name"] = [[Korblox]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Nuke Game.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Korblox.UICorner
 G2L["61"] = Instance.new("UICorner", G2L["60"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Nuke Game.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Korblox.Shadow
 G2L["62"] = Instance.new("ImageLabel", G2L["60"]);
 G2L["62"]["BorderSizePixel"] = 0;
 G2L["62"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -927,17 +927,17 @@ G2L["62"]["Name"] = [[Shadow]];
 G2L["62"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Nuke Game.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Korblox.Shadow.UIGradient
 G2L["63"] = Instance.new("UIGradient", G2L["62"]);
 G2L["63"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Nuke Game.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Korblox.LocalScript
 G2L["64"] = Instance.new("LocalScript", G2L["60"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Punish
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Naked
 G2L["65"] = Instance.new("TextButton", G2L["12"]);
 G2L["65"]["BorderSizePixel"] = 0;
 G2L["65"]["TextSize"] = 18;
@@ -947,16 +947,16 @@ G2L["65"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["65"]["BackgroundTransparency"] = 0.8;
 G2L["65"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["65"]["Text"] = [[Punish]];
-G2L["65"]["Name"] = [[Punish]];
+G2L["65"]["Text"] = [[Naked]];
+G2L["65"]["Name"] = [[Naked]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Punish.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Naked.UICorner
 G2L["66"] = Instance.new("UICorner", G2L["65"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Punish.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Naked.Shadow
 G2L["67"] = Instance.new("ImageLabel", G2L["65"]);
 G2L["67"]["BorderSizePixel"] = 0;
 G2L["67"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -973,17 +973,17 @@ G2L["67"]["Name"] = [[Shadow]];
 G2L["67"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Punish.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Naked.Shadow.UIGradient
 G2L["68"] = Instance.new("UIGradient", G2L["67"]);
 G2L["68"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Punish.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Naked.LocalScript
 G2L["69"] = Instance.new("LocalScript", G2L["65"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ragdoll
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.No-limbs
 G2L["6a"] = Instance.new("TextButton", G2L["12"]);
 G2L["6a"]["BorderSizePixel"] = 0;
 G2L["6a"]["TextSize"] = 18;
@@ -993,16 +993,16 @@ G2L["6a"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["6a"]["BackgroundTransparency"] = 0.8;
 G2L["6a"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6a"]["Text"] = [[Ragdoll]];
-G2L["6a"]["Name"] = [[Ragdoll]];
+G2L["6a"]["Text"] = [[No-limbs]];
+G2L["6a"]["Name"] = [[No-limbs]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ragdoll.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.No-limbs.UICorner
 G2L["6b"] = Instance.new("UICorner", G2L["6a"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ragdoll.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.No-limbs.Shadow
 G2L["6c"] = Instance.new("ImageLabel", G2L["6a"]);
 G2L["6c"]["BorderSizePixel"] = 0;
 G2L["6c"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -1019,17 +1019,17 @@ G2L["6c"]["Name"] = [[Shadow]];
 G2L["6c"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ragdoll.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.No-limbs.Shadow.UIGradient
 G2L["6d"] = Instance.new("UIGradient", G2L["6c"]);
 G2L["6d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ragdoll.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.No-limbs.LocalScript
 G2L["6e"] = Instance.new("LocalScript", G2L["6a"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Tools
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Nuke Game
 G2L["6f"] = Instance.new("TextButton", G2L["12"]);
 G2L["6f"]["BorderSizePixel"] = 0;
 G2L["6f"]["TextSize"] = 18;
@@ -1039,16 +1039,16 @@ G2L["6f"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["6f"]["BackgroundTransparency"] = 0.8;
 G2L["6f"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6f"]["Text"] = [[Remove Tools]];
-G2L["6f"]["Name"] = [[Remove Tools]];
+G2L["6f"]["Text"] = [[Nuke Game]];
+G2L["6f"]["Name"] = [[Nuke Game]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Tools.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Nuke Game.UICorner
 G2L["70"] = Instance.new("UICorner", G2L["6f"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Tools.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Nuke Game.Shadow
 G2L["71"] = Instance.new("ImageLabel", G2L["6f"]);
 G2L["71"]["BorderSizePixel"] = 0;
 G2L["71"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -1065,17 +1065,17 @@ G2L["71"]["Name"] = [[Shadow]];
 G2L["71"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Tools.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Nuke Game.Shadow.UIGradient
 G2L["72"] = Instance.new("UIGradient", G2L["71"]);
 G2L["72"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Tools.ex
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Nuke Game.LocalScript
 G2L["73"] = Instance.new("LocalScript", G2L["6f"]);
-G2L["73"]["Name"] = [[ex]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.SLock
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Punish
 G2L["74"] = Instance.new("TextButton", G2L["12"]);
 G2L["74"]["BorderSizePixel"] = 0;
 G2L["74"]["TextSize"] = 18;
@@ -1085,16 +1085,16 @@ G2L["74"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["74"]["BackgroundTransparency"] = 0.8;
 G2L["74"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["74"]["Text"] = [[ServerLock: Off]];
-G2L["74"]["Name"] = [[SLock]];
+G2L["74"]["Text"] = [[Punish (delete character)]];
+G2L["74"]["Name"] = [[Punish]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.SLock.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Punish.UICorner
 G2L["75"] = Instance.new("UICorner", G2L["74"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.SLock.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Punish.Shadow
 G2L["76"] = Instance.new("ImageLabel", G2L["74"]);
 G2L["76"]["BorderSizePixel"] = 0;
 G2L["76"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -1111,17 +1111,17 @@ G2L["76"]["Name"] = [[Shadow]];
 G2L["76"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.SLock.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Punish.Shadow.UIGradient
 G2L["77"] = Instance.new("UIGradient", G2L["76"]);
 G2L["77"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.SLock.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Punish.LocalScript
 G2L["78"] = Instance.new("LocalScript", G2L["74"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Waist
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ragdoll
 G2L["79"] = Instance.new("TextButton", G2L["12"]);
 G2L["79"]["BorderSizePixel"] = 0;
 G2L["79"]["TextSize"] = 18;
@@ -1131,16 +1131,16 @@ G2L["79"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["79"]["BackgroundTransparency"] = 0.8;
 G2L["79"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["79"]["Text"] = [[Delete Waist (R15)]];
-G2L["79"]["Name"] = [[Waist]];
+G2L["79"]["Text"] = [[Ragdoll]];
+G2L["79"]["Name"] = [[Ragdoll]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Waist.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ragdoll.UICorner
 G2L["7a"] = Instance.new("UICorner", G2L["79"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Waist.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ragdoll.Shadow
 G2L["7b"] = Instance.new("ImageLabel", G2L["79"]);
 G2L["7b"]["BorderSizePixel"] = 0;
 G2L["7b"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -1157,88 +1157,415 @@ G2L["7b"]["Name"] = [[Shadow]];
 G2L["7b"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Waist.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ragdoll.Shadow.UIGradient
 G2L["7c"] = Instance.new("UIGradient", G2L["7b"]);
 G2L["7c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Waist.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ragdoll.LocalScript
 G2L["7d"] = Instance.new("LocalScript", G2L["79"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.Check
-G2L["7e"] = Instance.new("Frame", G2L["2"]);
-G2L["7e"]["ZIndex"] = 2;
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Faces
+G2L["7e"] = Instance.new("TextButton", G2L["12"]);
 G2L["7e"]["BorderSizePixel"] = 0;
-G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["7e"]["Size"] = UDim2.new(0, 30, 0, 30);
-G2L["7e"]["Position"] = UDim2.new(0.783, 10, 0.171, 0);
-G2L["7e"]["Name"] = [[Check]];
-G2L["7e"]["BackgroundTransparency"] = 0.5;
+G2L["7e"]["TextSize"] = 18;
+G2L["7e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7e"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["7e"]["BackgroundTransparency"] = 0.8;
+G2L["7e"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7e"]["Text"] = [[Remove Face]];
+G2L["7e"]["Name"] = [[Remove Faces]];
 
 
--- StarterGui.Strawberry.MainFrame.Check.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Faces.UICorner
 G2L["7f"] = Instance.new("UICorner", G2L["7e"]);
-G2L["7f"]["CornerRadius"] = UDim.new(0, 10);
 
 
--- StarterGui.Strawberry.MainFrame.Check.RE
-G2L["80"] = Instance.new("ImageButton", G2L["7e"]);
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Faces.Shadow
+G2L["80"] = Instance.new("ImageLabel", G2L["7e"]);
 G2L["80"]["BorderSizePixel"] = 0;
-G2L["80"]["BackgroundTransparency"] = 1;
+G2L["80"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
+G2L["80"]["SliceScale"] = 0.1;
+G2L["80"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["80"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["80"]["ImageTransparency"] = 0.5;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["80"]["BackgroundColor3"] = Color3.fromRGB(34, 34, 34);
-G2L["80"]["ZIndex"] = 3;
 G2L["80"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["80"]["Image"] = [[http://www.roblox.com/asset/?id=6353957304]];
-G2L["80"]["Size"] = UDim2.new(1, -14, 1, -14);
-G2L["80"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["80"]["Name"] = [[RE]];
+G2L["80"]["Image"] = [[http://www.roblox.com/asset/?id=13960012399]];
+G2L["80"]["Size"] = UDim2.new(1, 18, 1, 18);
+G2L["80"]["BackgroundTransparency"] = 1;
+G2L["80"]["Name"] = [[Shadow]];
 G2L["80"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Faces.Shadow.UIGradient
+G2L["81"] = Instance.new("UIGradient", G2L["80"]);
+G2L["81"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Faces.LocalScript
+G2L["82"] = Instance.new("LocalScript", G2L["7e"]);
+
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Tools
+G2L["83"] = Instance.new("TextButton", G2L["12"]);
+G2L["83"]["BorderSizePixel"] = 0;
+G2L["83"]["TextSize"] = 18;
+G2L["83"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["83"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["83"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["83"]["BackgroundTransparency"] = 0.8;
+G2L["83"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["83"]["Text"] = [[Remove Tools]];
+G2L["83"]["Name"] = [[Remove Tools]];
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Tools.UICorner
+G2L["84"] = Instance.new("UICorner", G2L["83"]);
+
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Tools.Shadow
+G2L["85"] = Instance.new("ImageLabel", G2L["83"]);
+G2L["85"]["BorderSizePixel"] = 0;
+G2L["85"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
+G2L["85"]["SliceScale"] = 0.1;
+G2L["85"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["85"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["85"]["ImageTransparency"] = 0.5;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["85"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["85"]["Image"] = [[http://www.roblox.com/asset/?id=13960012399]];
+G2L["85"]["Size"] = UDim2.new(1, 18, 1, 18);
+G2L["85"]["BackgroundTransparency"] = 1;
+G2L["85"]["Name"] = [[Shadow]];
+G2L["85"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Tools.Shadow.UIGradient
+G2L["86"] = Instance.new("UIGradient", G2L["85"]);
+G2L["86"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Tools.ex
+G2L["87"] = Instance.new("LocalScript", G2L["83"]);
+G2L["87"]["Name"] = [[ex]];
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove all sounds
+G2L["88"] = Instance.new("TextButton", G2L["12"]);
+G2L["88"]["BorderSizePixel"] = 0;
+G2L["88"]["TextSize"] = 18;
+G2L["88"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["88"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["88"]["BackgroundTransparency"] = 0.8;
+G2L["88"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["88"]["Text"] = [[Remove all sounds (FE)]];
+G2L["88"]["Name"] = [[Remove all sounds]];
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove all sounds.UICorner
+G2L["89"] = Instance.new("UICorner", G2L["88"]);
+
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove all sounds.Shadow
+G2L["8a"] = Instance.new("ImageLabel", G2L["88"]);
+G2L["8a"]["BorderSizePixel"] = 0;
+G2L["8a"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
+G2L["8a"]["SliceScale"] = 0.1;
+G2L["8a"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8a"]["ImageTransparency"] = 0.5;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["8a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["8a"]["Image"] = [[http://www.roblox.com/asset/?id=13960012399]];
+G2L["8a"]["Size"] = UDim2.new(1, 18, 1, 18);
+G2L["8a"]["BackgroundTransparency"] = 1;
+G2L["8a"]["Name"] = [[Shadow]];
+G2L["8a"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove all sounds.Shadow.UIGradient
+G2L["8b"] = Instance.new("UIGradient", G2L["8a"]);
+G2L["8b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove all sounds.LocalScript
+G2L["8c"] = Instance.new("LocalScript", G2L["88"]);
+
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove lighting
+G2L["8d"] = Instance.new("TextButton", G2L["12"]);
+G2L["8d"]["BorderSizePixel"] = 0;
+G2L["8d"]["TextSize"] = 18;
+G2L["8d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8d"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["8d"]["BackgroundTransparency"] = 0.8;
+G2L["8d"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8d"]["Text"] = [[Remove sky and lighting (FE)]];
+G2L["8d"]["Name"] = [[Remove lighting]];
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove lighting.UICorner
+G2L["8e"] = Instance.new("UICorner", G2L["8d"]);
+
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove lighting.Shadow
+G2L["8f"] = Instance.new("ImageLabel", G2L["8d"]);
+G2L["8f"]["BorderSizePixel"] = 0;
+G2L["8f"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
+G2L["8f"]["SliceScale"] = 0.1;
+G2L["8f"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["8f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8f"]["ImageTransparency"] = 0.5;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["8f"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["8f"]["Image"] = [[http://www.roblox.com/asset/?id=13960012399]];
+G2L["8f"]["Size"] = UDim2.new(1, 18, 1, 18);
+G2L["8f"]["BackgroundTransparency"] = 1;
+G2L["8f"]["Name"] = [[Shadow]];
+G2L["8f"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove lighting.Shadow.UIGradient
+G2L["90"] = Instance.new("UIGradient", G2L["8f"]);
+G2L["90"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove lighting.LocalScript
+G2L["91"] = Instance.new("LocalScript", G2L["8d"]);
+
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove players gui
+G2L["92"] = Instance.new("TextButton", G2L["12"]);
+G2L["92"]["BorderSizePixel"] = 0;
+G2L["92"]["TextSize"] = 18;
+G2L["92"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["92"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["92"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["92"]["BackgroundTransparency"] = 0.8;
+G2L["92"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["92"]["Text"] = [[Remove player UI]];
+G2L["92"]["Name"] = [[Remove players gui]];
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove players gui.UICorner
+G2L["93"] = Instance.new("UICorner", G2L["92"]);
+
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove players gui.Shadow
+G2L["94"] = Instance.new("ImageLabel", G2L["92"]);
+G2L["94"]["BorderSizePixel"] = 0;
+G2L["94"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
+G2L["94"]["SliceScale"] = 0.1;
+G2L["94"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["94"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["94"]["ImageTransparency"] = 0.5;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["94"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["94"]["Image"] = [[http://www.roblox.com/asset/?id=13960012399]];
+G2L["94"]["Size"] = UDim2.new(1, 18, 1, 18);
+G2L["94"]["BackgroundTransparency"] = 1;
+G2L["94"]["Name"] = [[Shadow]];
+G2L["94"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove players gui.Shadow.UIGradient
+G2L["95"] = Instance.new("UIGradient", G2L["94"]);
+G2L["95"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove players gui.LocalScript
+G2L["96"] = Instance.new("LocalScript", G2L["92"]);
+
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.SLock
+G2L["97"] = Instance.new("TextButton", G2L["12"]);
+G2L["97"]["BorderSizePixel"] = 0;
+G2L["97"]["TextSize"] = 18;
+G2L["97"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["97"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["97"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["97"]["BackgroundTransparency"] = 0.8;
+G2L["97"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["97"]["Text"] = [[ServerLock: Off]];
+G2L["97"]["Name"] = [[SLock]];
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.SLock.UICorner
+G2L["98"] = Instance.new("UICorner", G2L["97"]);
+
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.SLock.Shadow
+G2L["99"] = Instance.new("ImageLabel", G2L["97"]);
+G2L["99"]["BorderSizePixel"] = 0;
+G2L["99"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
+G2L["99"]["SliceScale"] = 0.1;
+G2L["99"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["99"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["99"]["ImageTransparency"] = 0.5;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["99"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["99"]["Image"] = [[http://www.roblox.com/asset/?id=13960012399]];
+G2L["99"]["Size"] = UDim2.new(1, 18, 1, 18);
+G2L["99"]["BackgroundTransparency"] = 1;
+G2L["99"]["Name"] = [[Shadow]];
+G2L["99"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.SLock.Shadow.UIGradient
+G2L["9a"] = Instance.new("UIGradient", G2L["99"]);
+G2L["9a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.SLock.LocalScript
+G2L["9b"] = Instance.new("LocalScript", G2L["97"]);
+
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Waist
+G2L["9c"] = Instance.new("TextButton", G2L["12"]);
+G2L["9c"]["BorderSizePixel"] = 0;
+G2L["9c"]["TextSize"] = 18;
+G2L["9c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9c"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["9c"]["BackgroundTransparency"] = 0.8;
+G2L["9c"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9c"]["Text"] = [[Delete Waist (R15)]];
+G2L["9c"]["Name"] = [[Waist]];
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Waist.UICorner
+G2L["9d"] = Instance.new("UICorner", G2L["9c"]);
+
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Waist.Shadow
+G2L["9e"] = Instance.new("ImageLabel", G2L["9c"]);
+G2L["9e"]["BorderSizePixel"] = 0;
+G2L["9e"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
+G2L["9e"]["SliceScale"] = 0.1;
+G2L["9e"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["9e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9e"]["ImageTransparency"] = 0.5;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["9e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["9e"]["Image"] = [[http://www.roblox.com/asset/?id=13960012399]];
+G2L["9e"]["Size"] = UDim2.new(1, 18, 1, 18);
+G2L["9e"]["BackgroundTransparency"] = 1;
+G2L["9e"]["Name"] = [[Shadow]];
+G2L["9e"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Waist.Shadow.UIGradient
+G2L["9f"] = Instance.new("UIGradient", G2L["9e"]);
+G2L["9f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
+
+
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Waist.LocalScript
+G2L["a0"] = Instance.new("LocalScript", G2L["9c"]);
+
+
+
+-- StarterGui.Strawberry.MainFrame.Check
+G2L["a1"] = Instance.new("Frame", G2L["2"]);
+G2L["a1"]["ZIndex"] = 2;
+G2L["a1"]["BorderSizePixel"] = 0;
+G2L["a1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a1"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["a1"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["a1"]["Position"] = UDim2.new(0.783, 10, 0.171, 0);
+G2L["a1"]["Name"] = [[Check]];
+G2L["a1"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.Strawberry.MainFrame.Check.UICorner
+G2L["a2"] = Instance.new("UICorner", G2L["a1"]);
+G2L["a2"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.Strawberry.MainFrame.Check.RE
+G2L["a3"] = Instance.new("ImageButton", G2L["a1"]);
+G2L["a3"]["BorderSizePixel"] = 0;
+G2L["a3"]["BackgroundTransparency"] = 1;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["a3"]["BackgroundColor3"] = Color3.fromRGB(34, 34, 34);
+G2L["a3"]["ZIndex"] = 3;
+G2L["a3"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["a3"]["Image"] = [[http://www.roblox.com/asset/?id=6353957304]];
+G2L["a3"]["Size"] = UDim2.new(1, -14, 1, -14);
+G2L["a3"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["a3"]["Name"] = [[RE]];
+G2L["a3"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
 -- StarterGui.Strawberry.MainFrame.Check.RE.Check
-G2L["81"] = Instance.new("LocalScript", G2L["80"]);
-G2L["81"]["Name"] = [[Check]];
+G2L["a4"] = Instance.new("LocalScript", G2L["a3"]);
+G2L["a4"]["Name"] = [[Check]];
 
 
 -- StarterGui.Strawberry.MainFrame.Check.Shadow
-G2L["82"] = Instance.new("ImageLabel", G2L["7e"]);
-G2L["82"]["BorderSizePixel"] = 0;
-G2L["82"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
-G2L["82"]["SliceScale"] = 0.1;
-G2L["82"]["ScaleType"] = Enum.ScaleType.Slice;
-G2L["82"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["82"]["ImageTransparency"] = 0.5;
+G2L["a5"] = Instance.new("ImageLabel", G2L["a1"]);
+G2L["a5"]["BorderSizePixel"] = 0;
+G2L["a5"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
+G2L["a5"]["SliceScale"] = 0.1;
+G2L["a5"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a5"]["ImageTransparency"] = 0.5;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["82"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["82"]["Image"] = [[http://www.roblox.com/asset/?id=13960012399]];
-G2L["82"]["Size"] = UDim2.new(1, 18, 1, 18);
-G2L["82"]["BackgroundTransparency"] = 1;
-G2L["82"]["Name"] = [[Shadow]];
-G2L["82"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["a5"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["a5"]["Image"] = [[http://www.roblox.com/asset/?id=13960012399]];
+G2L["a5"]["Size"] = UDim2.new(1, 18, 1, 18);
+G2L["a5"]["BackgroundTransparency"] = 1;
+G2L["a5"]["Name"] = [[Shadow]];
+G2L["a5"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
 -- StarterGui.Strawberry.MainFrame.Check.Shadow.UIGradient
-G2L["83"] = Instance.new("UIGradient", G2L["82"]);
-G2L["83"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
+G2L["a6"] = Instance.new("UIGradient", G2L["a5"]);
+G2L["a6"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
 -- StarterGui.Strawberry.MainFrame.Check.UIGradient
-G2L["84"] = Instance.new("UIGradient", G2L["7e"]);
-G2L["84"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
+G2L["a7"] = Instance.new("UIGradient", G2L["a1"]);
+G2L["a7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
 -- StarterGui.Strawberry.MainFrame.Check.Anim
-G2L["85"] = Instance.new("LocalScript", G2L["7e"]);
-G2L["85"]["Name"] = [[Anim]];
+G2L["a8"] = Instance.new("LocalScript", G2L["a1"]);
+G2L["a8"]["Name"] = [[Anim]];
 
 
 -- StarterGui.Strawberry.MainFrame.UIDrag
-G2L["86"] = Instance.new("LocalScript", G2L["2"]);
-G2L["86"]["Name"] = [[UIDrag]];
+G2L["a9"] = Instance.new("LocalScript", G2L["2"]);
+G2L["a9"]["Name"] = [[UIDrag]];
+
+
+-- StarterGui.Strawberry.MainFrame.LocalScript
+G2L["aa"] = Instance.new("LocalScript", G2L["2"]);
+
 
 
 -- StarterGui.Strawberry.MainFrame.Username.Anim
@@ -1318,8 +1645,12 @@ local script = G2L["1e"];
 	local bannedplayers = {}
 	
 	game.Players.PlayerAdded:Connect(function(plr)
-		if table.find(bannedplayers, plr.Name) then
+		if table.find(bannedplayers, plr.UserId) then
+			local msg = Instance.new("Hint", workspace)
+			msg.Text = plr.Name.." tried to join but is server banned! (STRAWBERRY)"
 			delete(plr)
+			task.wait(3)
+			msg:Destroy()
 		end
 	end)
 	
@@ -1327,27 +1658,28 @@ local script = G2L["1e"];
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
 		
-		if name ~= "all" and name ~= "others" and name ~= "me" then
+		if name ~= "all" and name ~= "others" then
 			if player then
-				table.insert(bannedplayers,player.Name)
+				table.insert(bannedplayers,player.UserId)
+				task.wait()
+				delete(player)
 			end
 		elseif name == "all" then
 			for _, v in pairs(game.Players:GetPlayers()) do
 				if v then
-					table.insert(bannedplayers,v.Name)
+					table.insert(bannedplayers,v.UserId)
+					task.wait()
+					delete(v)
 				end
 			end
 		elseif name == "others" then
 			local localPlayer = game.Players.LocalPlayer
 			for _, v in pairs(game.Players:GetPlayers()) do
 				if v ~= localPlayer then
-					table.insert(bannedplayers,v.Name)
+					table.insert(bannedplayers,v.UserId)
+					task.wait()
+					delete(v)
 				end
-			end
-		elseif name == "me" then
-			local localPlayer = game.Players.LocalPlayer
-			if localPlayer then
-				table.insert(bannedplayers,game.Players.LocalPlayer.Name)
 			end
 		end
 	end)
@@ -1391,9 +1723,46 @@ local script = G2L["23"];
 	end)
 end;
 task.spawn(C_23);
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Games Scripts.LocalScript
 local function C_28()
 local script = G2L["28"];
+	local function delete(item)
+		game.Players.LocalPlayer.deletebind:Fire(item)
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, v in pairs(game:GetDescendants()) do
+			if v:IsA("Script") then
+				delete(v)
+			end
+			if v:IsA("ModuleScript") then
+				delete(v)
+			end
+		end
+		
+		for i, v in pairs(game.Players:GetDescendants()) do
+			if v:IsA("LocalScript") then
+				delete(v)
+			end
+		end
+	end)
+end;
+task.spawn(C_28);
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Break Terrain.LocalScript
+local function C_2d()
+local script = G2L["2d"];
+	local function delete(item)
+		game.Players.LocalPlayer.deletebind:Fire(item)
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		delete(workspace.Terrain)
+	end)
+end;
+task.spawn(C_2d);
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.BreakSpawn.LocalScript
+local function C_32()
+local script = G2L["32"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
@@ -1406,10 +1775,10 @@ local script = G2L["28"];
 		end
 	end)
 end;
-task.spawn(C_28);
+task.spawn(C_32);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Brickify.LocalScript
-local function C_2d()
-local script = G2L["2d"];
+local function C_37()
+local script = G2L["37"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
@@ -1443,10 +1812,10 @@ local script = G2L["2d"];
 		end
 	end)
 end;
-task.spawn(C_2d);
+task.spawn(C_37);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Cancel Animations.ex
-local function C_32()
-local script = G2L["32"];
+local function C_3c()
+local script = G2L["3c"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
@@ -1457,7 +1826,7 @@ local script = G2L["32"];
 	
 		if name ~= "all" and name ~= "others" and name ~= "me" then
 			if player then
-				delete(v.Character:FindFirstChild("Animate"))
+				delete(player.Character:FindFirstChild("Animate"))
 			end
 		elseif name == "all" then
 			for _, v in pairs(game.Players:GetPlayers()) do
@@ -1475,15 +1844,57 @@ local script = G2L["32"];
 		elseif name == "me" then
 			local localPlayer = game.Players.LocalPlayer
 			if localPlayer then
-				delete(v.Character:FindFirstChild("Animate"))
+				delete(localPlayer.Character:FindFirstChild("Animate"))
 			end
 		end
 	end)
 end;
-task.spawn(C_32);
+task.spawn(C_3c);
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Click on player to copy user.LocalScript
+local function C_41()
+local script = G2L["41"];
+	local function delete(item)
+		game.Players.LocalPlayer.deletebind:Fire(item)
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local mouse = player:GetMouse()
+	
+		local tool = Instance.new("Tool")
+		tool.Name = "Copy User Tool"
+		tool.RequiresHandle = false
+		tool.Parent = player:WaitForChild("Backpack")
+	
+		local equipped = false
+	
+		tool.Equipped:Connect(function()
+			equipped = true
+		end)
+	
+		tool.Unequipped:Connect(function()
+			equipped = false
+		end)
+	
+		mouse.Button1Down:Connect(function()
+			if not equipped then return end
+	
+			local target = mouse.Target
+			if target then
+				if target.Parent:FindFirstChild("Humanoid") then
+					local plr = game.Players:GetPlayerFromCharacter(target.Parent)
+					setclipboard(plr.Name)
+					toclipboard(plr.Name)
+				end
+			end
+		end)
+	end)
+end;
+task.spawn(C_41);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Delete Tool.LocalScript
-local function C_37()
-local script = G2L["37"];
+local function C_46()
+local script = G2L["46"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
@@ -1518,10 +1929,10 @@ local script = G2L["37"];
 		end)
 	end)
 end;
-task.spawn(C_37);
+task.spawn(C_46);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Explorer.ex
-local function C_3c()
-local script = G2L["3c"];
+local function C_4b()
+local script = G2L["4b"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
@@ -2129,7 +2540,7 @@ local script = G2L["3c"];
 	
 			local function listChildren(parentInstance)
 				clearButtons()
-	
+
 				for _, child in ipairs(parentInstance:GetChildren()) do
 					local button = Instance.new("TextButton")
 					button.Name = child.Name
@@ -2180,7 +2591,7 @@ local script = G2L["3c"];
 						image.Image = "http://www.roblox.com/asset/?id=8143940984"
 						button.Text = "       "..button.Text
 					end
-	
+
 					button.MouseButton1Click:Connect(function()
 						table.insert(historyStack, currentInstance)
 						currentInstance = child
@@ -2191,10 +2602,10 @@ local script = G2L["3c"];
 						delete(child)
 						delete(button)
 					end)
-	
+
 				end
 			end
-	
+
 			backButton.MouseButton1Click:Connect(function()
 				if #historyStack > 0 then
 					currentInstance = table.remove(historyStack)
@@ -2202,33 +2613,33 @@ local script = G2L["3c"];
 					scrollingFrame.CanvasPosition = Vector2.new(0,0)
 				end
 			end)
-	
+
 			listChildren(currentInstance)
 		end;
 		task.spawn(C_1d);
-	
+
 		return G2L["1"], require;
 	end)
 end;
-task.spawn(C_3c);
+task.spawn(C_4b);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Flight.LocalScript
-local function C_41()
-local script = G2L["41"];
+local function C_50()
+	local script = G2L["50"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
-	
+
 	flying = false
 	Fly = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if Fly == true then
 			Fly = false
 			return
 		end
-		
+
 		Fly = true
-		
+
 		local mouse=game.Players.LocalPlayer:GetMouse''
 		local localplayer=game.Players.LocalPlayer
 		game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
@@ -2237,7 +2648,7 @@ local script = G2L["41"];
 		local keys={a=false,d=false,w=false,s=false} 
 		local e1
 		local e2
-		
+
 		local function start()
 			local pos = Instance.new("BodyPosition",torso)
 			local gyro = Instance.new("BodyGyro",torso)
@@ -2313,36 +2724,36 @@ local script = G2L["41"];
 		start()
 	end)
 end;
-task.spawn(C_41);
+task.spawn(C_50);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Goto.LocalScript
-local function C_46()
-local script = G2L["46"];
+local function C_55()
+	local script = G2L["55"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
-	
+
 		if player then
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame
 		end
 	end)
-	
+
 end;
-task.spawn(C_46);
+task.spawn(C_55);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kick.LocalScript
-local function C_4b()
-local script = G2L["4b"];
+local function C_5a()
+	local script = G2L["5a"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
-		
+
 		if name ~= "all" and name ~= "others" and name ~= "me" then
 			if player then
 				delete(player)
@@ -2368,18 +2779,18 @@ local script = G2L["4b"];
 		end
 	end)
 end;
-task.spawn(C_4b);
+task.spawn(C_5a);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Kill.ex
-local function C_50()
-local script = G2L["50"];
+local function C_5f()
+	local script = G2L["5f"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = game.Players:FindFirstChild(name)
-	
+
 		if name ~= "all" and name ~= "others" and name ~= "me" then
 			if player and player.Character and player.Character:FindFirstChild("Head") then
 				delete(player.Character.Head)
@@ -2405,19 +2816,19 @@ local script = G2L["50"];
 		end
 	end)
 end;
-task.spawn(C_50);
+task.spawn(C_5f);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Korblox.LocalScript
-local function C_55()
-local script = G2L["55"];
+local function C_64()
+	local script = G2L["64"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local localPlayer = game.Players.LocalPlayer
 		local player = game.Players:FindFirstChild(name)
-	
+
 		if name ~= "all" and name ~= "others" and name ~= "me" then
 			if player and player.Character and player.Character:FindFirstChild("Head") then
 				local character = player.Character
@@ -2437,7 +2848,7 @@ local script = G2L["55"];
 					end
 				end
 			end
-	
+
 		elseif name == "all" then
 			for _, v in pairs(game.Players:GetPlayers()) do
 				local character = v.Character
@@ -2459,7 +2870,7 @@ local script = G2L["55"];
 					end
 				end
 			end
-	
+
 		elseif name == "others" then
 			for _, v in pairs(game.Players:GetPlayers()) do
 				if v ~= localPlayer then
@@ -2483,7 +2894,7 @@ local script = G2L["55"];
 					end
 				end
 			end
-	
+
 		elseif name == "me" then
 			local character = localPlayer and localPlayer.Character
 			if character and character:FindFirstChild("Head") then
@@ -2506,21 +2917,21 @@ local script = G2L["55"];
 		end
 	end)
 end;
-task.spawn(C_55);
+task.spawn(C_64);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Naked.LocalScript
-local function C_5a()
-local script = G2L["5a"];
+local function C_69()
+	local script = G2L["69"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
-	
+
 	local Players = game:GetService("Players")
 	local localPlayer = Players.LocalPlayer
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local player = Players:FindFirstChild(name)
-	
+
 		if name ~= "all" and name ~= "others" and name ~= "me" then
 			if player and player.Character and player.Character:FindFirstChild("Head") then
 				for _, v in pairs(player.Character:GetChildren()) do
@@ -2560,21 +2971,21 @@ local script = G2L["5a"];
 		end
 	end)
 end;
-task.spawn(C_5a);
+task.spawn(C_69);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.No-limbs.LocalScript
-local function C_5f()
-local script = G2L["5f"];
+local function C_6e()
+	local script = G2L["6e"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
-	
+
 	--this was my pain and suffering :')
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		local name = script.Parent.Parent.Parent.Username.Text
 		local localPlayer = game.Players.LocalPlayer
 		local player = game.Players:FindFirstChild(name)
-	
+
 		if name ~= "all" and name ~= "others" and name ~= "me" then
 			if player and player.Character and player.Character:FindFirstChild("Head") then
 				local character = player.Character
@@ -2597,7 +3008,7 @@ local script = G2L["5f"];
 					end
 				end
 			end
-	
+
 		elseif name == "all" then
 			for _, v in pairs(game.Players:GetPlayers()) do
 				local character = v.Character
@@ -2622,7 +3033,7 @@ local script = G2L["5f"];
 					end
 				end
 			end
-	
+
 		elseif name == "others" then
 			for _, v in pairs(game.Players:GetPlayers()) do
 				if v ~= localPlayer then
@@ -2676,10 +3087,10 @@ local script = G2L["5f"];
 	end)
 
 end;
-task.spawn(C_5f);
+task.spawn(C_6e);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Nuke Game.LocalScript
-local function C_64()
-	local script = G2L["64"];
+local function C_73()
+	local script = G2L["73"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
@@ -2697,10 +3108,10 @@ local function C_64()
 		end
 	end)
 end;
-task.spawn(C_64);
+task.spawn(C_73);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Punish.LocalScript
-local function C_69()
-	local script = G2L["69"];
+local function C_78()
+	local script = G2L["78"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
@@ -2734,10 +3145,10 @@ local function C_69()
 		end
 	end)
 end;
-task.spawn(C_69);
+task.spawn(C_78);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Ragdoll.LocalScript
-local function C_6e()
-	local script = G2L["6e"];
+local function C_7d()
+	local script = G2L["7d"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
@@ -2771,10 +3182,64 @@ local function C_6e()
 		end
 	end)
 end;
-task.spawn(C_6e);
+task.spawn(C_7d);
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Faces.LocalScript
+local function C_82()
+	local script = G2L["82"];
+	local function delete(item)
+		game.Players.LocalPlayer.deletebind:Fire(item)
+	end
+
+	local Players = game:GetService("Players")
+	local localPlayer = Players.LocalPlayer
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local name = script.Parent.Parent.Parent.Username.Text
+		local player = Players:FindFirstChild(name)
+
+		if name ~= "all" and name ~= "others" and name ~= "me" then
+			if player and player.Character and player.Character:FindFirstChild("Head") then
+				for _, v in pairs(player.Character.Head:GetChildren()) do
+					if v:IsA("Decal") then
+						delete(v)
+					end
+				end
+			end
+		elseif name == "all" then
+			for _, v in pairs(Players:GetPlayers()) do
+				if v.Character and v.Character:FindFirstChild("Head") then
+					for _, x in pairs(v.Character.Head:GetChildren()) do
+						if x:IsA("Decal") then
+							delete(x)
+						end
+					end
+				end
+			end
+		elseif name == "others" then
+			for _, v in pairs(Players:GetPlayers()) do
+				if v ~= localPlayer and v.Character and v.Character:FindFirstChild("Head") then
+					for _, x in pairs(v.Character.Head:GetChildren()) do
+						if x:IsA("Decal") then
+							delete(x)
+						end
+					end
+				end
+			end
+		elseif name == "me" then
+			if localPlayer.Character and localPlayer.Character:FindFirstChild("Head") then
+				for _, v in pairs(localPlayer.Character.Head:GetChildren()) do
+					if v:IsA("Decal") then
+						delete(v)
+					end
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_82);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove Tools.ex
-local function C_73()
-	local script = G2L["73"];
+local function C_87()
+	local script = G2L["87"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
@@ -2836,10 +3301,91 @@ local function C_73()
 		end
 	end)
 end;
-task.spawn(C_73);
+task.spawn(C_87);
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove all sounds.LocalScript
+local function C_8c()
+	local script = G2L["8c"];
+	local function delete(item)
+		game.Players.LocalPlayer.deletebind:Fire(item)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, v in ipairs(workspace:GetDescendants()) do
+			if v:IsA("Sound") then
+				delete(v)
+			end
+		end
+	end)
+end;
+task.spawn(C_8c);
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove lighting.LocalScript
+local function C_91()
+	local script = G2L["91"];
+	local function delete(item)
+		game.Players.LocalPlayer.deletebind:Fire(item)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, v in ipairs(workspace:GetDescendants()) do
+			if v:IsA("Light") then
+				delete(v)
+			end
+		end
+		for i, v in ipairs(game.Lighting:GetDescendants()) do
+			delete(v)
+		end
+	end)
+end;
+task.spawn(C_91);
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Remove players gui.LocalScript
+local function C_96()
+	local script = G2L["96"];
+	local function delete(item)
+		game.Players.LocalPlayer.deletebind:Fire(item)
+	end
+
+	local Players = game:GetService("Players")
+	local localPlayer = Players.LocalPlayer
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local name = script.Parent.Parent.Parent.Username.Text
+		local player = Players:FindFirstChild(name)
+
+		if name ~= "all" and name ~= "others" and name ~= "me" then
+			if player and player.Character and player.Character:FindFirstChild("Head") then
+				for _, v in pairs(player.PlayerGui:GetChildren()) do
+					delete(v)
+				end
+			end
+		elseif name == "all" then
+			for _, v in pairs(Players:GetPlayers()) do
+				if v.Character and v.Character:FindFirstChild("Head") then
+					for _, x in pairs(v.PlayerGui:GetChildren()) do
+						delete(x)
+					end
+				end
+			end
+		elseif name == "others" then
+			for _, v in pairs(Players:GetPlayers()) do
+				if v ~= localPlayer and v.Character and v.Character:FindFirstChild("Head") then
+					for _, x in pairs(v.PlayerGui:GetChildren()) do
+						delete(x)
+					end
+				end
+			end
+		elseif name == "me" then
+			if localPlayer.Character and localPlayer.Character:FindFirstChild("Head") then
+				for _, v in pairs(localPlayer.PlayerGui:GetChildren()) do
+					delete(v)
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_96);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.SLock.LocalScript
-local function C_78()
-	local script = G2L["78"];
+local function C_9b()
+	local script = G2L["9b"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
@@ -2886,10 +3432,10 @@ local function C_78()
 		end
 	end)
 end;
-task.spawn(C_78);
+task.spawn(C_9b);
 -- StarterGui.Strawberry.MainFrame.ScrollingFrame.Waist.LocalScript
-local function C_7d()
-	local script = G2L["7d"];
+local function C_a0()
+	local script = G2L["a0"];
 	local function delete(item)
 		game.Players.LocalPlayer.deletebind:Fire(item)
 	end
@@ -2935,10 +3481,10 @@ local function C_7d()
 		end
 	end)
 end;
-task.spawn(C_7d);
+task.spawn(C_a0);
 -- StarterGui.Strawberry.MainFrame.Check.RE.Check
-local function C_81()
-	local script = G2L["81"];
+local function C_a4()
+	local script = G2L["a4"];
 	local Players = game:GetService("Players")
 	local textBox = script.Parent.Parent.Parent.Username
 
@@ -2975,10 +3521,10 @@ local function C_81()
 		end
 	end)
 end;
-task.spawn(C_81);
+task.spawn(C_a4);
 -- StarterGui.Strawberry.MainFrame.Check.Anim
-local function C_85()
-	local script = G2L["85"];
+local function C_a8()
+	local script = G2L["a8"];
 	local button = script.Parent
 
 	button.MouseEnter:Connect(function()
@@ -2988,10 +3534,10 @@ local function C_85()
 		button:TweenSize(UDim2.new(0, 30,0, 30), "Out", "Quad", 0.1, true)
 	end)
 end;
-task.spawn(C_85);
+task.spawn(C_a8);
 -- StarterGui.Strawberry.MainFrame.UIDrag
-local function C_86()
-	local script = G2L["86"];
+local function C_a9()
+	local script = G2L["a9"];
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
 	local dragToggle = nil
@@ -3028,6 +3574,19 @@ local function C_86()
 	end)
 
 end;
-task.spawn(C_86);
+task.spawn(C_a9);
+-- StarterGui.Strawberry.MainFrame.LocalScript
+local function C_aa()
+	local script = G2L["aa"];
+	local commandcount = 0
+	for i, v in pairs(script.Parent.ScrollingFrame:GetChildren()) do
+		if v:IsA("TextButton") then
+			commandcount += 1
+		end
+	end
+	task.wait()
+	script.Parent.ScrollingFrame.SubTitle.Text = script.Parent.ScrollingFrame.SubTitle.Text.." ("..tostring(commandcount).." commands loaded!)"
+end;
+task.spawn(C_aa);
 
 return G2L["1"], require;

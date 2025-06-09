@@ -71,14 +71,14 @@ local function remoteBackdoored(remote)
 	print("STRAWBERRY V5: "..remote.Name.." /isbackdoored: "..tostring(isDestroyed(testpart)).." / "..remote:GetFullName());
 	if isDestroyed(testpart) then
 		vulnremote = remote;
-	end
+	end;
 	return isDestroyed(testpart);
 end; -- // checks a remote event for a backdoor or vulnerability by firing it and seeing if it does something
 
 local function scan()
 	for i, v in pairs(game:GetDescendants()) do
 		if v:IsA("RemoteEvent") then
-			if not v.Parent then continue end
+			if not v.Parent then continue end;
 			if v.Parent.Name == "RobloxReplicatedStorage" then continue end;
 			if remoteBackdoored(v) then
 				backdoorfound = true;

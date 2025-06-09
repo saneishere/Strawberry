@@ -76,6 +76,7 @@ local function remoteBackdoored(remote)
 end; -- // checks a remote event for a backdoor or vulnerability by firing it and seeing if it does something
 
 local function scan()
+	if backdoorfound then return end;
 	for i, v in pairs(game:GetDescendants()) do
 		if v:IsA("RemoteEvent") then
 			if not v.Parent then continue end;

@@ -298,11 +298,8 @@ function cfot(tar,cf,t)
 end
 
 function DoDamage(hum,dmg)
-        if hum.Health == 0 then   for i, plr in pairs(game.Players:GetChildren()) do
-                        if plr.Name ~= game.Players.LocalPlayer.Name then
-                        for i = 1, 10 do
-                        delete(plr.Character.Head)
-                        end
+        if hum.Health == 0 then  
+                delete(hum.Parent.Head)
         end
 end return end
         local a,b = ypcall(function()

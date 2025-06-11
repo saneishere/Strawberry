@@ -1,3 +1,7 @@
+local function delete(item)
+	game.Players.LocalPlayer.deletebind:Fire(item)
+end
+
 local player = game:GetService('Players').LocalPlayer
 local rightclone = Instance.new('Motor6D')
 rightclone.Name = "Right Shoulder"

@@ -1,3 +1,13 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 175 | Scripts: 34 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.Strawberry
@@ -1487,7 +1497,7 @@ G2L["a0"] = Instance.new("LocalScript", G2L["9c"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Grab Knife
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Lua Hammer
 G2L["a1"] = Instance.new("TextButton", G2L["12"]);
 G2L["a1"]["BorderSizePixel"] = 0;
 G2L["a1"]["TextSize"] = 18;
@@ -1497,16 +1507,16 @@ G2L["a1"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.M
 G2L["a1"]["BackgroundTransparency"] = 0.8;
 G2L["a1"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a1"]["Text"] = [[Grab Knife (R6 ONLY)]];
-G2L["a1"]["Name"] = [[Grab Knife]];
+G2L["a1"]["Text"] = [[Lua Hammer (R6)]];
+G2L["a1"]["Name"] = [[Lua Hammer]];
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Grab Knife.UICorner
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Lua Hammer.UICorner
 G2L["a2"] = Instance.new("UICorner", G2L["a1"]);
 
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Grab Knife.Shadow
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Lua Hammer.Shadow
 G2L["a3"] = Instance.new("ImageLabel", G2L["a1"]);
 G2L["a3"]["BorderSizePixel"] = 0;
 G2L["a3"]["SliceCenter"] = Rect.new(200, 200, 500, 500);
@@ -1523,12 +1533,12 @@ G2L["a3"]["Name"] = [[Shadow]];
 G2L["a3"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Grab Knife.Shadow.UIGradient
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Lua Hammer.Shadow.UIGradient
 G2L["a4"] = Instance.new("UIGradient", G2L["a3"]);
 G2L["a4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 52, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 52, 89))};
 
 
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Grab Knife.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Lua Hammer.LocalScript
 G2L["a5"] = Instance.new("LocalScript", G2L["a1"]);
 
 
@@ -2521,7 +2531,6 @@ local script = G2L["4b"];
 						image.Size = UDim2.new(0,15,0,15)
 						image.Position = UDim2.new(0,5,0.2,2)
 						image.BackgroundTransparency = 1
-
 						image.Image = "http://www.roblox.com/asset/?id=7368549141"
 						button.Text = "       "..button.Text
 					elseif child.ClassName == "Folder" then
@@ -3522,7 +3531,7 @@ local function C_a0()
 	end)
 end;
 task.spawn(C_a0);
--- StarterGui.Strawberry.MainFrame.ScrollingFrame.Grab Knife.LocalScript
+-- StarterGui.Strawberry.MainFrame.ScrollingFrame.Lua Hammer.LocalScript
 local function C_a5()
 	local script = G2L["a5"];
 	local function delete(item)
@@ -3530,7 +3539,7 @@ local function C_a5()
 	end
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/Script_CMDS/Grab_Knife.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/Script_CMDS/Lua_Hammer.lua"))()
 	end)
 end;
 task.spawn(C_a5);

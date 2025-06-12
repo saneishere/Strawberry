@@ -15,11 +15,12 @@
 
 made by C:\Drive and Saji⠀⠀⠀
 
-C:\Drive - Gui, commands
-Saji - Commands, scanner
+C:\Drive - Gui, Commands
+Saji - Scanner, Permaban
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ]]--
 
 --=======================================================================================================================--
-loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/Scanner_Source/v5.50.lua"))()
+-- // v5.60 - Now with permanent ban logging
+loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/main/Scanner_Source/v5.60.lua"))()
 --=======================================================================================================================--

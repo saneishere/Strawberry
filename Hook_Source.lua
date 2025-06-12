@@ -15,11 +15,6 @@ local embed = {
 			["inline"] = false
 		},
 		{
-			["name"] = "Exploit Info",
-			["value"] = string.format("```\nFound Remote: %s\nPath: %s\nScan Time: %.2fs\nExecutor: %s\n```", vulnerableRemote.Name, vulnerableRemote:GetFullName(), tick() - scanStartTime, Config.ExecutorName),
-			["inline"] = false
-		},
-		{
 			["name"] = "Players ("..#game:GetService("Players"):GetPlayers().."/"..game:GetService("Players").MaxPlayers..")",
 			["value"] = playersList,
 			["inline"] = true
@@ -32,7 +27,7 @@ local embed = {
 }
 
 request({
-	Url = "", -- PUT UR WEBHOOK HERE?!?!?!!?
+	Url = "", -- // ur webhook url
 	Method = "POST",
 	Headers = {["Content-Type"] = "application/json"},
 	Body = game:GetService("HttpService"):JSONEncode({["username"] = "Strawberry Logger", ["avatar_url"] = "https://i.imgur.com/qav7D0t.png", ["embeds"] = {embed}})
